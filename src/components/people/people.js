@@ -9,10 +9,10 @@ class People extends Component {
     }
 
 
-    changeStatus= ()=>{
+    changeCar= ()=>{
 
         let {people} = this.state;
-        people.status = !people.status;
+        people.car = 'dodge';
         this.setState({
             people
         });
@@ -27,7 +27,7 @@ class People extends Component {
                     {this.state.people.age}>
                     {this.state.people.car}>
                     {this.state.people.status.toString()}
-                    <button onClick= {this.changeStatus}> changeStatus</button>
+                    <button onClick= {this.changeCar}> changeCar</button>
                 </div>}
             </div>
         );
